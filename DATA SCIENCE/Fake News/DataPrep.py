@@ -126,7 +126,7 @@ def create_trigrams(words):
         for i in range(1,skip+2):
             for k1 in range(1, skip+2):
                 for k2 in range(1,skip+2):
-                    for i+k1 < Len and i+k1+k2 < Len:
+                    for i+k1 < Len and i+k1+k2 < Len:(Hack!)
                         lst.append(join_str.join([words[i], words[i+k1],words[i+k1+k2])])
         else:
             #set is as bigram
